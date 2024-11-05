@@ -1,0 +1,145 @@
+/* Animação para fade-in nas seções */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efeito de imagem */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte geral e cores */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #020202;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a {
+  margin-left: 20px;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Estilos das seções */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#inicio a,
+#feedback button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#inicio a:hover,
+#feedback button:hover {
+  background-color: #ff8c00;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #main-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+/* index.css */
+a {
+  color: cyan; /* Define a cor dos links */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  transition: color 0.3s ease; /* Adiciona uma transição suave para a cor */
+}
+
+a:hover {
+  color: #00ffff; /* Altera a cor quando o mouse passa sobre o link */
+  text-decoration: underline; /* Adiciona um sublinhado quando o link está ativo */
+}
+/* CSS atualizado para o efeito visual das estrelas */
+.star {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.star.selected,
+.star:hover {
+  color: #f39c12;
+}
+
+#star-rating .star {
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+  margin: 0 5px;
+}
